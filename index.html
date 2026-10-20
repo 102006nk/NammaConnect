@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn practical Kannada for everyday life.">
+  <title>NammaConnect | Everyday Kannada</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">ನಮ್ಮ <span>Connect</span></a>
+    <span class="tagline">Your everyday Kannada assistant</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">YOUR KANNADA COMPANION</p>
+      <h1>Kannada for <span>everyday life.</span></h1>
+      <p class="intro">
+        Learn useful Kannada phrases for travel, shopping,
+        college and more. Simple words, confident conversations.
+      </p>
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search"
+          placeholder="Search in English or Kannada..."
+          aria-label="Search Kannada phrases">
+      </label>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE</p>
+          <h2>Choose your situation</h2>
+        </div>
+        <button id="showAll" class="text-button">View all</button>
+      </div>
+      <div id="categories" class="categories"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">LEARN SOMETHING USEFUL</p>
+          <h2 id="phraseHeading">Popular phrases</h2>
+        </div>
+        <span id="phraseCount" class="count"></span>
+      </div>
+      <div id="phraseList" class="phrase-list" aria-live="polite"></div>
+    </section>
+
+    <section class="quiz-section">
+      <p class="eyebrow">TEST YOURSELF</p>
+      <h2>Ready for a quick quiz?</h2>
+      <p>Practise what you have learned with a short quiz.</p>
+      <button id="startQuiz" class="primary-button">Start quiz →</button>
+      <div id="quizArea" class="quiz-area" hidden></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>NammaConnect · Learn Kannada, connect with Karnataka.</p>
+    <p class="footer-note">Phrases are learning aids. Confirm important
+      translations with a fluent Kannada speaker.</p>
+  </footer>
+</body>
+</html>
+
